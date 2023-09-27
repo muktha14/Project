@@ -2,7 +2,7 @@
 :root {
     --primary: #4b37fe;
     --light: #e4f0f6;
-    --dark: #103741;
+    --dark: #002147;
 }
 
 .back-to-top {
@@ -69,6 +69,39 @@
     font-weight: normal;
     border-radius: 50px;
 }
+
+
+.custom-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.custom-list li {
+    margin-bottom: 10px;
+    /* Adjust as needed */
+    text-align: justify;
+    /* Justify the text */
+    position: relative;
+}
+
+.custom-list li:before {
+    content: "\2714";
+    /* Unicode character for a checkbox (☑) */
+    color: #0044ff;
+    /* Customize the color if needed */
+    font-size: 1.2em;
+    /* Adjust the font size if needed */
+    margin-right: 10px;
+    /* Adjust the spacing between the symbol and text if needed */
+    vertical-align: middle;
+    position: absolute;
+    left: -20px;
+    /* Adjust the position of the checkbox */
+    top: 2px;
+    /* Adjust the vertical position of the checkbox */
+}
+
+
 
 
 /*** Heading ***/
@@ -365,7 +398,7 @@ h6,
 .team-item .team-text {
     position: absolute;
     width: 250px;
-    height: 250px;
+    height: 100px;
     bottom: 0;
     right: 0;
     display: flex;
@@ -517,14 +550,14 @@ body {
     background: #757f9a;
     background: -webkit-linear-gradient(to left, #d7dde8, #757f9a);
     background: linear-gradient(to left, #d7dde8, #757f9a);
-  }
-  
-  #content {
-    max-width: 600px;
+}
+
+#content {
+    max-width: 1000px;
     margin: 25vh auto;
-  }
-  
-  .testimonial blockquote {
+}
+
+.testimonial blockquote {
     margin: 10px 10px 0;
     background: #efefef;
     padding: 20px 60px;
@@ -532,34 +565,34 @@ body {
     border: none;
     border-radius: 8px;
     font-style: italic;
-  }
-  
-  .testimonial blockquote:before,
-  .testimonial blockquote:after {
+}
+
+.testimonial blockquote:before,
+.testimonial blockquote:after {
     content: "\201C";
     position: absolute;
     font-size: 80px;
     line-height: 1;
     color: #757f9a;
     font-style: normal;
-  }
-  
-  .testimonial blockquote:before {
+}
+
+.testimonial blockquote:before {
     top: 0;
     left: 10px;
-  }
-  
-  .testimonial blockquote:after {
+}
+
+.testimonial blockquote:after {
     content: "\201D";
     right: 10px;
     bottom: -0.5em;
-  }
-  
-  .testimonial div {
+}
+
+.testimonial div {
     width: 0;
     height: 0;
     border-left: 0 solid transparent;
     border-right: 20px solid transparent;
     border-top: 20px solid #efefef;
     margin: 0 0 0 60px;
-  }
+}
